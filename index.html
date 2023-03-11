@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>ADDING, MODIFYING AND DELETING AN ELEMENT FROM A TABLE</title>
+</head>
+<body>
+    <h1 style="margin-left: 110px;">ДОБАВЛЕНИЕ, ИЗМЕНЕНИЕ И УДАЛЕНИЕ ЭЛЕМЕНТА ИЗ ТАБЛИЦЫ</h1>
+    <form action="#" class="add" name="add">
+        <input required type="text" placeholder="Полное Имя Студ..." name="name" class="input">
+        <input required type="number" placeholder="Возраст Студента" name="age" class="input">
+        <button class="add_btn">Добавить</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Имя Студента</th>
+                <th>Год Рождения</th>
+                <th>Действия</th>
+            </tr>
+        </thead>
+        <tbody class="tbody"></tbody>
+    </table>
+    <center>
+        <div class="modal_bg"></div>
+        <div class="modal">
+            <h1>Изменение</h1>
+            <input class="new_name" type="text" name="name" placeholder="Полное Имя">
+            <input class="new_age" type="text" name="age" placeholder="Возраст">
+            <div class="butn">
+                <button class="exit">Exit</button>
+                <button class="save">Save</button>
+            </div>
+        </div>
+    </center>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script type="module" src="./script.js"></script>
+</html>
